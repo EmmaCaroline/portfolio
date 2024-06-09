@@ -1,0 +1,35 @@
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    box-sizing: inherit;
+    background-repeat: no-repeat;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-pragati);
+}
+
+p, a, input, label {
+    font-family: var(--font-roboto);
+    color: white;
+}

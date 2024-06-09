@@ -234,11 +234,11 @@ header {
 }
 
 .projects-heading {
-    margin: 80px 60px 20px 60px;
+    margin: 80px 30px 20px 30px;
 }
 
 .heading {
-    margin: 50px 30px;
+    margin: 50px 50px;
 }
 
 .heading h2 {
@@ -256,7 +256,7 @@ header {
 .cards, .cards-info {
     display: flex;
     flex-direction: column;
-    padding: 0 60px 30px 60px;
+    padding: 0 30px 30px 30px;
     gap: 60px;
 }
 
@@ -271,18 +271,17 @@ header {
 
 .cards p, .cards-info p {
     font-weight: 300;
+    line-height: 20px;
 }
 
 .my-work {
-    margin: 20px 60px 20px 60px;
+    margin: 20px 30px 20px 30px;
     font-weight: 300;
-    animation: message-frames 1.5s ease 0.5s forwards;
-    opacity: 0;
-    padding: 20px;
-    border: 3px solid;
-    border-image: linear-gradient(45deg, #43b0a3, #ffffff) 1;
-    border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #71aebd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .web-development-tools {
@@ -359,11 +358,11 @@ button {
 .about h2 {
     text-align: center;
     font-weight: 300;
-    padding: 10px 0;
-    border: 3px solid;
-    border-image: linear-gradient(45deg, #43b0a3, #ffffff) 1;
-    border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #71aebd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     margin: 20px 40px;
 }
 

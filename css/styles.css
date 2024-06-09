@@ -28,19 +28,14 @@
 }
 
 header {
-    padding: 5px 40px;
-    /*position: fixed; */
-    height: 144px;
+    padding: 0.313rem 2.5rem;
+    height: 9rem;
     width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.3s;
     background-color: var(--color-secondary);
-    /*top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;*/
 }
 
 .navigation {
@@ -125,7 +120,7 @@ header {
     min-height: 100vh;
     z-index: 1;
     transition: 0.5s;
-    padding-top: 140px;
+    padding-top: 8.75rem;
 }
 
 .menu li {
@@ -149,7 +144,7 @@ header {
 .banner {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     overflow: hidden;
 }
 
@@ -208,16 +203,16 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10px;
+    bottom: 0.625rem;
     color: white;
     font-family: var(--font-outfit);
-    line-height: 40px;
+    line-height: 2.5rem;
     font-size: 48px;
     pointer-events: none;
     animation: message-frames 2.5s ease 1s forwards;
     opacity: 0;
     text-align: center;
-    padding: 50px;
+    padding: 3.125rem;
     border: 3px solid #FFF;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
@@ -234,11 +229,11 @@ header {
 }
 
 .projects-heading {
-    margin: 80px 30px 20px 30px;
+    margin: 5rem 1.875rem 1.25rem 1.875rem;
 }
 
 .heading {
-    margin: 50px 50px;
+    margin: 3.125rem;
 }
 
 .heading h2 {
@@ -256,8 +251,8 @@ header {
 .cards, .cards-info {
     display: flex;
     flex-direction: column;
-    padding: 0 30px 30px 30px;
-    gap: 60px;
+    padding: 0 1.875rem 1.875rem 1.875rem;
+    gap: 3.75rem;
 }
 
 .cards {
@@ -271,11 +266,11 @@ header {
 
 .cards p, .cards-info p {
     font-weight: 300;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 
 .my-work {
-    margin: 20px 30px 20px 30px;
+    margin: 1.25rem 1.875rem 1.25rem 1.875rem;
     font-weight: 300;
     background: linear-gradient(to right, #ffffff, #71aebd);
     -webkit-background-clip: text;
@@ -288,8 +283,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .cards p {
@@ -303,7 +298,7 @@ header {
 
 .links {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .flex-1 p {
@@ -312,7 +307,7 @@ header {
 }
 
 .project-exam, .rainydays, .semester-project {
-    padding: 20px;
+    padding: 1.25rem;
     border: 3px solid;
     border-image: linear-gradient(45deg, #78f3e5, #ffffff) 1;
     border-radius: 50%;
@@ -332,7 +327,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 9.375rem;
     width: auto;
     position: relative;
 }
@@ -363,12 +358,12 @@ button {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    margin: 20px 40px;
+    margin: 1.25rem 2.5rem;
 }
 
 .about p {
-    margin: 0 40px 20px 40px;
-    line-height: 20px;
+    margin: 0 2.5rem 1.25rem 2.5rem;
+    line-height: 1.25rem;
     font-weight: 300;
 }
 
@@ -378,7 +373,7 @@ button {
 }
 
 .about .italic-font:last-of-type {
-    margin-top: 80px;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -389,7 +384,7 @@ button {
     }
 
     .cards {
-        padding: 0 130px 30px 130px;
+        padding: 0 8.125rem 1.875rem 8.125rem;
     }
 
     .my-work {
@@ -397,11 +392,11 @@ button {
     }
 
     .about h2 {
-        margin: 30px 120px;
+        margin: 1.875rem 7.5rem;
     }
 
     .about p {
-        margin: 0 120px 20px 120px;
+        margin: 0 7.5rem 1.25rem 7.5rem;
     }
 }
 
@@ -444,7 +439,7 @@ button {
     }
 
     .message {
-        line-height: 50px;
+        line-height: 3.125rem;
         font-size: 58px;
     }
 
@@ -459,27 +454,27 @@ button {
     }
 
     .projects-heading {
-        margin: 140px 60px 40px 60px;
+        margin: 8.75rem 3.75rem 2.5rem 3.75rem;
         text-align: center;
     }
 
     .my-work {
-        margin: 60px 100px 100px 100px;
+        margin: 3.75rem 6.25rem 6.25rem 6.25rem;
         font-weight: 300;
         font-size: 36px;
     }
 
     .cards {
-        padding: 0 100px 30px 100px;
+        padding: 0 6.25rem 1.875rem 6.25rem;
     }
 
     .cards-info {
-        padding: 0 100px 30px 100px;
-        gap: 100px;
+        padding: 0 6.25rem 1.875rem 6.25rem;
+        gap: 6.25rem;
     }
 
     .project-exam {
-        width: 600px;
+        width: 37.5rem;
         height: auto;
     }
 
@@ -487,11 +482,11 @@ button {
         width: auto;
         height: auto;
         display: flex;
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     .rainydays {
-        width: 600px;
+        width: 37.5rem;
         height: auto;
     }
 
@@ -500,11 +495,11 @@ button {
         height: auto;
         display: flex;
         flex-direction: row-reverse;
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     .semester-project {
-        width: 600px;
+        width: 37.5rem;
         height: auto;
     }
 
@@ -512,7 +507,7 @@ button {
         width: auto;
         height: auto;
         display: flex;
-        gap: 30px; 
+        gap: 1.875rem; 
     }
 
     .flex-1 p {
@@ -525,19 +520,19 @@ button {
     }
 
     .flex-2 p {
-        line-height: 30px;
+        line-height: 1.875rem;
     }
 
     .image-container {
-        height: 300px;      
+        height: 18.75rem;      
     }
 
     .about h2 {
-        margin: 60px 300px;
+        margin: 3.75rem 18.75rem;
     }
 
     .about p {
-        margin: 0 300px 20px 300px;
-        line-height: 30px;
+        margin: 0 18.75rem 1.25rem 18.75rem;
+        line-height: 1.875rem;
     }
 }

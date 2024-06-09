@@ -2,10 +2,6 @@
 @import url("reset.css");
 @import url("variables.css");
 
-main {
-    padding-top: 144px;
-}
-
 /* HEADER */
 
 .visually-hidden {
@@ -218,7 +214,7 @@ header {
     line-height: 40px;
     font-size: 48px;
     pointer-events: none;
-    animation: message-frames 1.5s ease 2s forwards;
+    animation: message-frames 2.5s ease 1s forwards;
     opacity: 0;
     text-align: center;
     padding: 50px;
@@ -257,25 +253,36 @@ header {
     font-weight: 400;
 }
 
-.cards {
+.cards, .cards-info {
     display: flex;
     flex-direction: column;
     padding: 0 60px 30px 60px;
     gap: 60px;
 }
 
-.cards img {
+.cards {
+    align-items: center;
+}
+
+.cards img, .cards-info img {
     width: 100%;
     height: auto;
 }
 
-.cards p {
+.cards p, .cards-info p {
     font-weight: 300;
 }
 
-.coming-soon {
-    margin: 80px 60px 20px 60px;
+.my-work {
+    margin: 20px 60px 20px 60px;
     font-weight: 300;
+    animation: message-frames 1.5s ease 0.5s forwards;
+    opacity: 0;
+    padding: 20px;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #43b0a3, #ffffff) 1;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .web-development-tools {
@@ -286,10 +293,116 @@ header {
     margin-bottom: 20px;
 }
 
+.cards p {
+    text-align: center;
+}
+
+.uppercase-bold {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-1 p {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.project-exam, .rainydays, .semester-project {
+    padding: 20px;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #78f3e5, #ffffff) 1;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    border: 2px solid #43b0a3;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-family: var(--font-roboto);
+    font-size: ;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: auto;
+    position: relative;
+}
+
+.image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.background2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    mask-image: radial-gradient(white 0%, white 30%, transparent 80%, transparent);
+}
+
+.about h2 {
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #43b0a3, #ffffff) 1;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px 40px;
+}
+
+.about p {
+    margin: 0 40px 20px 40px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.italic-font {
+    font-style: italic;
+    color: lightgray;
+}
+
+.about .italic-font:last-of-type {
+    margin-top: 80px;
+    text-align: center;
+}
+
 @media (min-width: 650px) { /* TABLET */
+
+    p, a, button {
+        font-size: 16px;
+    }
 
     .cards {
         padding: 0 130px 30px 130px;
+    }
+
+    .my-work {
+        text-align: center;
+    }
+
+    .about h2 {
+        margin: 30px 120px;
+    }
+
+    .about p {
+        margin: 0 120px 20px 120px;
     }
 }
 
@@ -332,23 +445,8 @@ header {
     }
 
     .message {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 10px;
-        color: white;
-        font-family: var(--font-outfit);
         line-height: 50px;
         font-size: 58px;
-        pointer-events: none;
-        animation: message-frames 1.5s ease 2s forwards;
-        opacity: 0;
-        text-align: center;
-        padding: 50px;
-        border: 3px solid #FFF;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.3);
     }
 
     .heading h2 {
@@ -362,30 +460,85 @@ header {
     }
 
     .projects-heading {
-        margin: 140px 60px 20px 60px;
+        margin: 140px 60px 40px 60px;
         text-align: center;
+    }
+
+    .my-work {
+        margin: 60px 100px 100px 100px;
+        font-weight: 300;
+        font-size: 36px;
     }
 
     .cards {
         padding: 0 100px 30px 100px;
-        gap: 10px;
+    }
+
+    .cards-info {
+        padding: 0 100px 30px 100px;
+        gap: 100px;
     }
 
     .project-exam {
-        width: 500px;
+        width: 600px;
         height: auto;
-        align-self: flex-start;
+    }
+
+    .project-exam-info {
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 30px;
     }
 
     .rainydays {
-        width: 500px;
+        width: 600px;
         height: auto;
-        align-self: flex-end;
+    }
+
+    .rainydays-info {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 30px;
     }
 
     .semester-project {
-        width: 500px;
+        width: 600px;
         height: auto;
-        align-self: flex-start;
+    }
+
+    .semester-project-info {
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 30px; 
+    }
+
+    .flex-1 p {
+        font-size: 24px;
+    }
+
+    .flex-2 {
+        align-self: center;
+        width: 70%;
+    }
+
+    .flex-2 p {
+        line-height: 30px;
+    }
+
+    .image-container {
+        height: 300px;      
+    }
+
+    .about h2 {
+        margin: 60px 300px;
+    }
+
+    .about p {
+        margin: 0 300px 20px 300px;
+        line-height: 30px;
     }
 }

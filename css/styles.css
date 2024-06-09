@@ -215,8 +215,8 @@ header {
     bottom: 10px;
     color: white;
     font-family: var(--font-outfit);
-    line-height: 50px;
-    font-size: 58px;
+    line-height: 40px;
+    font-size: 48px;
     pointer-events: none;
     animation: message-frames 1.5s ease 2s forwards;
     opacity: 0;
@@ -237,15 +237,61 @@ header {
     }
 }
 
+.projects-heading {
+    margin: 80px 60px 20px 60px;
+}
+
+.heading {
+    margin: 50px 30px;
+}
+
 .heading h2 {
     font-size: 20px;
+    font-weight: 300;
+    text-align: center;
 }
 
 .large-text {
     text-transform: uppercase;
     font-size: 28px;
+    font-weight: 400;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 30px 60px;
+    gap: 60px;
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+}
+
+.cards p {
+    font-weight: 300;
+}
+
+.coming-soon {
+    margin: 80px 60px 20px 60px;
+    font-weight: 300;
+}
+
+.web-development-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 650px) { /* TABLET */
+
+    .cards {
+        padding: 0 130px 30px 130px;
+    }
+}
 
 @media (min-width: 1026px) { /* DESKTOP */
 
@@ -285,14 +331,61 @@ header {
         display: none;
     }
 
+    .message {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+        color: white;
+        font-family: var(--font-outfit);
+        line-height: 50px;
+        font-size: 58px;
+        pointer-events: none;
+        animation: message-frames 1.5s ease 2s forwards;
+        opacity: 0;
+        text-align: center;
+        padding: 50px;
+        border: 3px solid #FFF;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+
     .heading h2 {
         font-size: 28px;
-        font-weight: 300;
+        text-align: center;
     }
     
     .large-text {
         text-transform: uppercase;
         font-size: 36px;
-        font-weight: 400;
+    }
+
+    .projects-heading {
+        margin: 140px 60px 20px 60px;
+        text-align: center;
+    }
+
+    .cards {
+        padding: 0 100px 30px 100px;
+        gap: 10px;
+    }
+
+    .project-exam {
+        width: 500px;
+        height: auto;
+        align-self: flex-start;
+    }
+
+    .rainydays {
+        width: 500px;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    .semester-project {
+        width: 500px;
+        height: auto;
+        align-self: flex-start;
     }
 }

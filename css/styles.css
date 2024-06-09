@@ -121,15 +121,15 @@ header {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 5.2rem;
+    top: 0;
     right: -120%;
-    /*background-color: var(--color-primary);*/
+    background-color: var(--color-secondary);
     width: 100%;
     height: auto;
     min-height: 100vh;
-    border: 10px solid var(--color-tertiary);
     z-index: 1;
     transition: 0.5s;
+    padding-top: 140px;
 }
 
 .menu li {
@@ -138,13 +138,12 @@ header {
 
 .menu li a {
     font-family: var(--font-roboto);
-    color: var(--color-secondary);
+    color: var(--color-primary);
     display: block;
-    text-align: center;
-    padding: 1.25rem;
+    text-align: left;
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
     font-size: 22px;
     line-height: 1rem;
-    border-top: 1px solid var(--color-tertiary);
     justify-content: center;
     transition: 0.1s;
 }
@@ -209,23 +208,6 @@ header {
     }
 }
 
-/*.message {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
-    color: white;
-    line-height: 50px;
-    font-size: 58px;
-    pointer-events: none;
-    animation: message-frames 1.5s ease 2s forwards;
-    opacity: 0;
-    text-align: center;
-    padding: 40px;
-    border: 4px solid #FFF;
-    border-radius: 50%;
-}*/
-
 .message {
     position: absolute;
     left: 50%;
@@ -255,6 +237,15 @@ header {
     }
 }
 
+.heading h2 {
+    font-size: 20px;
+}
+
+.large-text {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
 
 @media (min-width: 1026px) { /* DESKTOP */
 
@@ -271,6 +262,8 @@ header {
         height: 0;
         border: none;
         position: static;
+        background-color: transparent;
+        padding-top: 0;
     }
 
     .menu li {
@@ -281,8 +274,7 @@ header {
     .menu li a {
         color: var(--color-primary);
         padding: 1.25rem 0.938rem;
-        border-top: 0;
-        /*transition: 0.3s;*/
+        text-align: center;
     }
 
     .menu li a:hover {
@@ -291,5 +283,16 @@ header {
 
     .hamburger, .toggle-menu {
         display: none;
+    }
+
+    .heading h2 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    .large-text {
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 400;
     }
 }
